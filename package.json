@@ -1,0 +1,41 @@
+{
+  "name": "@callbacksystems/eslint-config",
+  "version": "1.0.0",
+  "description": "Callbacksystems house style for JavaScript.",
+  "main": "index.mjs",
+  "type": "module",
+  "files": [
+    "index.mjs"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callbacksystems/eslint-config.git"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig",
+    "callbacksystems"
+  ],
+  "author": "Callback Systems",
+  "contributors": [
+    "Bruno Prieto <brunoprietog@hey.com>"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/callbacksystems/eslint-config/issues"
+  },
+  "homepage": "https://github.com/callbacksystems/eslint-config#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "release": "npm publish"
+  },
+  "dependencies": {
+    "@eslint/js": "^10.0.1",
+    "@stylistic/eslint-plugin": "^4.4.1",
+    "eslint-plugin-perfectionist": "^5.6.0",
+    "eslint-plugin-sonarjs": "^4.0.0",
+    "globals": "^17.4.0"
+  }
+}
