@@ -1,0 +1,892 @@
+{
+  "base": {
+    "cjs": {
+      "parser": "espree",
+      "sourceType": "commonjs",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "js": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "jsx": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "mjs": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "astro": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "svelte": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    }
+  },
+  "browser": {
+    "cjs": {
+      "parser": "espree",
+      "sourceType": "commonjs",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "js": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "jsx": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "mjs": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "astro": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "svelte": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    }
+  },
+  "cloudflare": {
+    "cjs": {
+      "parser": "espree",
+      "sourceType": "commonjs",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "js": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "jsx": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "mjs": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "astro": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "svelte": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    }
+  },
+  "node": {
+    "cjs": {
+      "parser": "espree",
+      "sourceType": "commonjs",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "js": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "jsx": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "mjs": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "astro": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "svelte": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    }
+  },
+  "rails": {
+    "cjs": {
+      "parser": "espree",
+      "sourceType": "commonjs",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "callbacksystems/rails",
+        "callbacksystems/stimulus",
+        "callbacksystems/turbo",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "js": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "callbacksystems/rails",
+        "callbacksystems/stimulus",
+        "callbacksystems/turbo",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "jsx": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "callbacksystems/rails",
+        "callbacksystems/stimulus",
+        "callbacksystems/turbo",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "mjs": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "callbacksystems/rails",
+        "callbacksystems/stimulus",
+        "callbacksystems/turbo",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "astro": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "callbacksystems/rails",
+        "callbacksystems/stimulus",
+        "callbacksystems/turbo",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "svelte": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "callbacksystems/rails",
+        "callbacksystems/stimulus",
+        "callbacksystems/turbo",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    }
+  },
+  "stimulus": {
+    "cjs": {
+      "parser": "espree",
+      "sourceType": "commonjs",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "callbacksystems/stimulus",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "js": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "callbacksystems/stimulus",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "jsx": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "callbacksystems/stimulus",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "mjs": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "callbacksystems/stimulus",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "astro": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "callbacksystems/stimulus",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "svelte": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "callbacksystems/stimulus",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    }
+  },
+  "react": {
+    "cjs": {
+      "parser": "espree",
+      "sourceType": "commonjs",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "js": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "jsx": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "jsx-a11y",
+        "perfectionist",
+        "react",
+        "react-hooks",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "mjs": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "astro": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "svelte": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    }
+  },
+  "react_native": {
+    "cjs": {
+      "parser": "espree",
+      "sourceType": "commonjs",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "expo",
+        "import-x",
+        "perfectionist",
+        "react",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "js": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "expo",
+        "import-x",
+        "perfectionist",
+        "react",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "jsx": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "expo",
+        "import-x",
+        "perfectionist",
+        "react",
+        "react-hooks",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "mjs": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "expo",
+        "import-x",
+        "perfectionist",
+        "react",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "astro": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "svelte": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    }
+  },
+  "svelte": {
+    "cjs": {
+      "parser": "espree",
+      "sourceType": "commonjs",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "svelte",
+        "unicorn"
+      ]
+    },
+    "js": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "svelte",
+        "unicorn"
+      ]
+    },
+    "jsx": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "svelte",
+        "unicorn"
+      ]
+    },
+    "mjs": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "svelte",
+        "unicorn"
+      ]
+    },
+    "astro": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "svelte",
+        "unicorn"
+      ]
+    },
+    "svelte": {
+      "parser": "svelte-eslint-parser",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "svelte",
+        "unicorn"
+      ]
+    }
+  },
+  "astro": {
+    "cjs": {
+      "parser": "espree",
+      "sourceType": "commonjs",
+      "ruleNamespaces": [
+        "@stylistic",
+        "astro",
+        "astro/jsx-a11y",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "js": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "astro",
+        "astro/jsx-a11y",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "jsx": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "astro",
+        "astro/jsx-a11y",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "mjs": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "astro",
+        "astro/jsx-a11y",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "astro": {
+      "parser": "astro-eslint-parser",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "astro",
+        "astro/jsx-a11y",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    },
+    "svelte": {
+      "parser": "espree",
+      "sourceType": "module",
+      "ruleNamespaces": [
+        "@stylistic",
+        "astro",
+        "astro/jsx-a11y",
+        "callbacksystems",
+        "callbacksystems/browser",
+        "core",
+        "import-x",
+        "perfectionist",
+        "sonarjs",
+        "unicorn"
+      ]
+    }
+  }
+}
