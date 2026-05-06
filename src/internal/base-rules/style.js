@@ -1,0 +1,38 @@
+export const styleRules = {
+  "@stylistic/array-bracket-spacing": [ "error", "always" ],
+  "@stylistic/arrow-spacing": [ "error", { before: true, after: true } ],
+  "@stylistic/block-spacing": [ "error", "always" ],
+  "@stylistic/brace-style": "error",
+  "@stylistic/comma-dangle": [ "error", "never" ],
+  "@stylistic/comma-spacing": [ "error", { before: false, after: true } ],
+  "@stylistic/comma-style": [ "error", "last" ],
+  "@stylistic/computed-property-spacing": [ "error", "never" ],
+  "@stylistic/eol-last": "error",
+  "@stylistic/function-call-spacing": [ "error", "never" ],
+  "@stylistic/indent": [ "error", 2, { SwitchCase: 1 } ],
+  "@stylistic/key-spacing": [ "error", { beforeColon: false, afterColon: true } ],
+  "@stylistic/keyword-spacing": "error",
+  "@stylistic/max-len": [ "error", { code: 120 } ],
+  "@stylistic/max-statements-per-line": "error",
+  "@stylistic/no-extra-semi": "error",
+  "@stylistic/no-multi-spaces": "error",
+  "@stylistic/no-multiple-empty-lines": [ "error", { max: 1, maxBOF: 0, maxEOF: 0 } ],
+  "@stylistic/no-trailing-spaces": "error",
+  "@stylistic/nonblock-statement-body-position": [ "error", "beside" ],
+  "@stylistic/object-curly-spacing": [ "error", "always" ],
+  "@stylistic/quotes": [ "error", "double", { avoidEscape: true } ],
+  "@stylistic/semi": [ "error", "never" ],
+  "@stylistic/space-infix-ops": "error",
+  "@stylistic/spaced-comment": [ "error", "always" ],
+  "@stylistic/multiline-ternary": [ "error", "always-multiline" ],
+  "@stylistic/lines-around-comment": [ "error", { beforeBlockComment: true } ],
+  "@stylistic/no-mixed-operators": [ "error", { groups: [ [ "&&", "||" ] ] } ],
+  // No blank lines at the start or end of any block (including class bodies).
+  "@stylistic/padded-blocks": [ "error", "never" ],
+  // Blank line between class members, except after single-line members
+  // (so consecutive readonly/private fields stay grouped).
+  "@stylistic/lines-between-class-members": [ "error", "always", { exceptAfterSingleLine: true } ],
+  curly: [ "error", "multi-line" ],
+  "no-var": "error",
+  "prefer-const": [ "error", { destructuring: "all" } ]
+}

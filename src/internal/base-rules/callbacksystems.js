@@ -1,0 +1,32 @@
+import { enableRules } from "#helpers/config"
+
+export const callbacksystemsRules = enableRules([
+  "callbacksystems/compact-guard-clause",
+  "callbacksystems/compact-multi-line",
+  "callbacksystems/helpers-only-functions",
+  "callbacksystems/max-logical-operators-per-condition",
+  "callbacksystems/max-validation-guards-per-function",
+  "callbacksystems/no-alias-imports",
+  "callbacksystems/no-boolean-handler-chain",
+  "callbacksystems/no-deep-optional-chain",
+  "callbacksystems/no-typographic-clutter",
+  "callbacksystems/no-extra-bind-after-arrow-field",
+  "callbacksystems/no-flag-arg",
+  "callbacksystems/no-jsdoc",
+  "callbacksystems/no-loop-accumulator",
+  "callbacksystems/no-mid-function-returns",
+  "callbacksystems/no-mutable-module-scope",
+  "callbacksystems/no-padded-braces",
+  "callbacksystems/no-parameter-clump",
+  "callbacksystems/no-redundant-trailing-return",
+  "callbacksystems/no-relative-imports",
+  "callbacksystems/no-section-divider-comments",
+  "callbacksystems/no-sentinel-strings",
+  "callbacksystems/no-underscore-private",
+  "callbacksystems/padding-after-guard-clause",
+  "callbacksystems/prefer-arrow-class-field-for-handler",
+  "callbacksystems/prefer-positive-wrap",
+  "callbacksystems/prefer-switch-over-if-chain",
+  "callbacksystems/prefer-tail-condition",
+  "callbacksystems/prefer-ternary-return"
+])

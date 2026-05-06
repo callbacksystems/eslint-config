@@ -1,0 +1,53 @@
+import rule from "#rules/no-redundant-trailing-return"
+import { dedent, tester } from "#test/support"
+
+tester.run("no-redundant-trailing-return", rule, {
+  valid: [
+    dedent`
+      function f(x) {
+        if (x) return 1
+        return 2
+      }
+    `,
+    dedent`
+      function f() {
+        doSomething()
+      }
+    `,
+    dedent`
+      function f(x) {
+        if (x) return "value"
+        return null
+      }
+    `
+  ],
+  invalid: [
+    {
+      code: dedent`
+        function f() {
+          doSomething()
+          return null
+        }
+      `,
+      errors: [ { messageId: "redundantTrailingReturn" } ]
+    },
+    {
+      code: dedent`
+        function f() {
+          doSomething()
+          return undefined
+        }
+      `,
+      errors: [ { messageId: "redundantTrailingReturn" } ]
+    },
+    {
+      code: dedent`
+        function f() {
+          doSomething()
+          return
+        }
+      `,
+      errors: [ { messageId: "redundantTrailingReturn" } ]
+    }
+  ]
+})
