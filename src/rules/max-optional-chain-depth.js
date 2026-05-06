@@ -1,0 +1,42 @@
+// `a?.b?.c?.d?.e` indicates deep coupling or poor data modelling. Refactor: pre-validate, restructure the type, or
+// extract intermediate.
+
+const DEFAULT_MAX = 3
+
+export default {
+  meta: {
+    type: "suggestion",
+    docs: { description: "Limit optional-chain depth (`a?.b?.c?.d`)" },
+    schema: [ { type: "object", properties: { max: { type: "integer", minimum: 1 } }, additionalProperties: false } ],
+    messages: {
+      tooDeep: "Optional chain depth {{count}} exceeds maximum {{max}}. Restructure or extract intermediates."
+    }
+  },
+  create(context) {
+    const max = context.options[0]?.max ?? DEFAULT_MAX
+    return {
+      ChainExpression(node) {
+        const count = countOptionals(node.expression)
+        if (count <= max) return
+
+        context.report({ node, messageId: "tooDeep", data: { count, max } })
+      }
+    }
+  }
+}
+
+function countOptionals(node) {
+  return chainNodesFrom(node).filter(isOptional).length
+}
+
+function chainNodesFrom(node) {
+  return isMemberOrCall(node) ? [ node, ...chainNodesFrom(node.object ?? node.callee) ] : []
+}
+
+function isMemberOrCall(node) {
+  return Boolean(node) && (node.type === "MemberExpression" || node.type === "CallExpression")
+}
+
+function isOptional(node) {
+  return isMemberOrCall(node) && node.optional === true
+}
