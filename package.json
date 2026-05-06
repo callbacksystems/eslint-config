@@ -1,41 +1,106 @@
 {
   "name": "@callbacksystems/eslint-config",
   "version": "1.0.0",
-  "description": "Callbacksystems house style for JavaScript.",
-  "main": "index.mjs",
-  "type": "module",
-  "files": [
-    "index.mjs"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/callbacksystems/eslint-config.git"
-  },
-  "keywords": [
-    "eslint",
-    "eslintconfig",
-    "callbacksystems"
-  ],
+  "description": "Shared ESLint configuration for Callback Systems projects.",
+  "license": "MIT",
   "author": "Callback Systems",
   "contributors": [
     "Bruno Prieto <brunoprietog@hey.com>"
   ],
-  "license": "MIT",
+  "homepage": "https://github.com/callbacksystems/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/callbacksystems/eslint-config.git"
+  },
   "bugs": {
     "url": "https://github.com/callbacksystems/eslint-config/issues"
   },
-  "homepage": "https://github.com/callbacksystems/eslint-config#readme",
+  "keywords": [
+    "callbacksystems",
+    "eslint",
+    "eslintconfig",
+    "eslint-config",
+    "flat-config",
+    "rails",
+    "hotwire",
+    "stimulus",
+    "turbo",
+    "importmap",
+    "react",
+    "react-native",
+    "svelte",
+    "astro"
+  ],
+  "type": "module",
+  "exports": {
+    "./base": "./src/base.js",
+    "./browser": "./src/browser.js",
+    "./edge": "./src/edge.js",
+    "./node": "./src/node.js",
+    "./astro": "./src/astro.js",
+    "./rails": "./src/rails.js",
+    "./react": "./src/react.js",
+    "./react-native": "./src/react-native.js",
+    "./restrictions": "./src/restrictions.js",
+    "./rules": "./src/rules/index.js",
+    "./stimulus": "./src/stimulus.js",
+    "./svelte": "./src/svelte.js",
+    "./turbo": "./src/turbo.js"
+  },
+  "imports": {
+    "#package": "./package.json",
+    "#rules": "./src/rules/index.js",
+    "#internal/*": "./src/internal/*.js",
+    "#scripts/*": "./scripts/*.js",
+    "#support": "./test/support/index.js",
+    "#support/*": "./test/support/*.js",
+    "#*": "./src/*.js"
+  },
+  "files": [
+    "src/",
+    "docs/"
+  ],
+  "scripts": {
+    "docs": "node scripts/rules-document.js",
+    "lint": "eslint",
+    "test": "node --test 'test/**/*.test.js'",
+    "test:update-snapshots": "UPDATE_SNAPSHOTS=1 node --test 'test/configs/snapshots.test.js'",
+    "release": "npm publish"
+  },
+  "engines": {
+    "node": ">=24"
+  },
   "publishConfig": {
     "access": "public"
   },
-  "scripts": {
-    "release": "npm publish"
+  "overrides": {
+    "eslint": "$eslint"
+  },
+  "peerDependencies": {
+    "eslint": "^10.0.0"
   },
   "dependencies": {
     "@eslint/js": "^10.0.1",
-    "@stylistic/eslint-plugin": "^4.4.1",
-    "eslint-plugin-perfectionist": "^5.6.0",
-    "eslint-plugin-sonarjs": "^4.0.0",
-    "globals": "^17.4.0"
+    "@stylistic/eslint-plugin": "^5.10.0",
+    "astro-eslint-parser": "^1.4.0",
+    "eslint-import-resolver-typescript": "^4.4.5",
+    "eslint-plugin-astro": "^1.7.0",
+    "eslint-plugin-expo": "^1.1.0",
+    "eslint-plugin-import-x": "^4.17.1",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-perfectionist": "^5.10.0",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-sonarjs": "^4.2.0",
+    "eslint-plugin-svelte": "^3.22.0",
+    "eslint-plugin-unicorn": "^72.0.0",
+    "globals": "^17.9.0",
+    "minimatch": "^10.2.6",
+    "svelte-eslint-parser": "^1.8.0"
+  },
+  "devDependencies": {
+    "astro": "^7.1.6",
+    "eslint": "^10.8.0",
+    "svelte": "^5.56.8"
   }
 }
