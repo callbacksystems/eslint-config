@@ -1,0 +1,21 @@
+import rule from "#rules/max_local_variables"
+import { tester } from "#support"
+
+tester.run("max-local-variables", rule, {
+  valid: [
+    "function f() { const a = 1; const b = 2; const c = 3; return a + b + c }",
+    "function f(config) { config.a = 1; config.b = 2; config.c = 3; config.d = 4 }",
+    "function outer() { const a = 1; return list.map((item) => { const b = 2; const c = 3; const d = 4; return b }) }"
+  ],
+  invalid: [
+    {
+      code: "function f() { const a = 1; const b = 2; const c = 3; const d = 4; return a }",
+      errors: [ { messageId: "tooManyLocals", data: { count: "4", max: "3" } } ]
+    },
+    {
+      code: "function f() { const a = 1; const b = 2; const c = 3 }",
+      options: [ { max: 2 } ],
+      errors: [ { messageId: "tooManyLocals", data: { count: "3", max: "2" } } ]
+    }
+  ]
+})
