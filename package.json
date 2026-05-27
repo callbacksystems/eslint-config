@@ -96,7 +96,7 @@
     "svelte-eslint-parser": "^1.6.1"
   },
   "devDependencies": {
-    "astro": "^6.2.2",
+    "astro": "^6.3.8",
     "eslint": "^10.3.0",
     "svelte": "^5.55.5"
   }
