@@ -93,7 +93,7 @@
     "eslint-plugin-unicorn": "^64.0.0",
     "globals": "^17.6.0",
     "minimatch": "^10.2.5",
-    "svelte-eslint-parser": "^1.6.1"
+    "svelte-eslint-parser": "^1.7.1"
   },
   "devDependencies": {
     "astro": "^6.2.2",
