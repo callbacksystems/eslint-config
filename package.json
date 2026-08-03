@@ -97,8 +97,8 @@
     "eslint-plugin-sonarjs": "^4.0.3",
     "eslint-plugin-svelte": "^3.17.1",
     "eslint-plugin-unicorn": "^64.0.0",
-    "globals": "^17.6.0",
-    "minimatch": "^10.2.5",
+    "globals": "^17.8.0",
+    "minimatch": "^10.2.6",
     "svelte-eslint-parser": "^1.6.1"
   },
   "devDependencies": {
