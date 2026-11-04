@@ -101,8 +101,8 @@
     "eslint-plugin-unicorn": "^73.0.0",
     "eslint-visitor-keys": "^5.0.1",
     "find-up": "^8.0.0",
-    "globals": "^17.9.0",
-    "minimatch": "^10.2.6",
+    "globals": "^17.14.0",
+    "minimatch": "^11.0.3",
     "svelte-eslint-parser": "^1.8.0"
   },
   "devDependencies": {
